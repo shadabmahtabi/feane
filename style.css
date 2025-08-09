@@ -25,6 +25,7 @@
 html,body {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 .golden_btn {
@@ -48,7 +49,7 @@ html,body {
 .section1 {
     height: 100vh;
     width: 100%;
-    background-image: url("./hero-bg.jpg");
+    background-image: url("./imgs/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -358,6 +359,7 @@ html,body {
         img {
             height: 100%;
             width: 100%;
+            object-fit: cover;
         }
     }
 
@@ -377,5 +379,247 @@ html,body {
             font-family: ds;
             font-size: 2.5rem;
         }
+    }
+}
+
+.section5 {
+    height: 90vh;
+    width: 100%;
+    /* background-color: rgb(243, 101, 101); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vmax;
+
+
+    .form_part {
+        height: 80%;
+        width: 37%;
+        /* background-color: green; */
+        padding-top: 1vmax;
+
+        h1 {
+            font-family: ds;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1vmax;
+            padding: 2vmax 0;
+
+            input {
+                padding: 1vmax;
+                border: 1px solid #222831;
+                border-radius: .4vmax;
+                outline: none;
+                font-size: 1rem;
+                color: #000;
+            }
+        }
+    }
+
+    .map_part {
+        width: 37%;
+        height: 52%;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        margin: 20px 0;
+    }
+}
+
+.section6 {
+    height: 80vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vmax 0;
+
+    h1 {
+        height: 10%;
+        text-align: center;
+        font-family: ds;
+        font-size: 2.5rem;
+        font-weight: 500;
+        /* background-color: grey; */
+    }
+
+    .crousal {
+        height: 60%;
+        width: 75%;
+        /* background-color: blue; */
+        display: flex;
+        justify-content: space-between;
+
+        .cards {
+            height: 100%;
+            width: 48.5%;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            gap: 2.5vmax;
+
+            .card_part {
+                height: 55%;
+                width: 100%;
+                background-color: var(--dark-black);
+                border-radius: .5vmax;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: .3vmax;
+                padding: 1.5vmax;
+
+                h3 {
+                    padding: .8vmax 0 0 0;
+                }
+
+                h4 {
+                    font-weight: 100;
+                }
+            }
+
+            .profile_pic {
+                height: 8vmax;
+                width: 8vmax;
+                /* background-color: rgb(159, 158, 158); */
+                margin-left: 1.5vmax;
+                border-radius: 50%;
+                border: 5px solid var(--golden-color);
+                /* overflow: hidden; */
+                position: relative;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .profile_pic::after {
+                content: "";
+                position: absolute;
+                top: -15%;
+                left: 50%;
+                transform: translate(-50%);
+                z-index: 9;
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 15px solid var(--golden-color);
+            }
+        }
+    }
+
+    .navigation_btns {
+        height: 10%;
+        width: 80%;
+        /* background-color: rgb(155, 155, 212); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vmax;
+
+        .btns {
+            height: 3vmax;
+            width: 3vmax;
+            background-color: var(--golden-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+    }
+}
+
+footer {
+    height: 60vh;
+    width: 100%;
+    background-color: var(--dark-black);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vmax;
+
+    .info {
+        height: 45%;
+        min-width: 0;
+        max-width: 63%;
+        /* background-color: green; */
+        margin-bottom: 2vmax;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4vmax;
+        /* justify-content: space-between; */
+
+        .data {
+            height: 100%;
+            max-width: 40%;
+            /* background-color: blue; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vmax;
+
+            h1 {
+                font-family: ds;
+                font-weight: 500;
+                margin-bottom: .8vmax;
+            }
+            
+            #h1 {
+                font-size: 2.4rem;
+                margin-bottom: 0vmax;
+            }
+
+            h4 {
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: .5vmax;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            .icons {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: .3vmax;
+
+                .icon {
+                    height: 2.5vmax;
+                    width: 2.5vmax;
+                    color: var(--dark-black);
+                    border-radius: 50%;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-weight: 300;
+        text-align: center;
     }
 }
