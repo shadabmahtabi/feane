@@ -635,25 +635,11 @@ footer {
 
 @media screen and (max-width: 500px) {
     .golden_btn {
-        padding: .75vmax 3vmax;
-        width: fit-content;
-        border: none;
-        background-color: var(--light_golden-color);
-        border-radius: 5vw;
-        color: #fff;
-        font-size: .95rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: .5vw;
-
-        &:hover {
-            background-color: var(--golden-color);
-        }
+        padding: 1vmax 3vmax;
     }
 
     .section1 {
-        min-height: 90vh;
+        min-height: 90vmax;
         width: 100%;
         background-image: url("./imgs/hero-bg.jpg");
         background-size: cover;
@@ -724,71 +710,37 @@ footer {
             }
 
             .bullets {
-                height: 6%;
+                height: 25%;
                 width: 8vmax;
             }
         }
     }
 
     .section2 {
-        height: 50vmax;
-        width: 100%;
-        /* background-color: red; */
-        display: flex;
+        min-height: 100vmax;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2vw;
+        gap: 5vmax;
         /* display: none; */
 
         .banners {
-            height: 40%;
-            width: 80%;
-            background-color: var(--dark-black);
-            border-radius: .5vw;
-            display: flex;
-            align-items: center;
-            /* justify-content: center; */
-            gap: 1.5vw;
-            padding-left: 2vw;
-            color: #fff;
+            height: 42%;
+            width: 90%;
+            border-radius: .5vmax;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5vmax;
+            padding-left: 0vmax;
 
             .part1 {
-                height: 25vh;
-                width: 25vh;
-                /* background-color: red; */
-                border-radius: 50%;
-                border: .4vw solid var(--golden-color);
+                height: 20vmax;
+                width: 20vmax;
+                border: .5vmax solid var(--golden-color);
                 overflow: hidden;
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                    background-size: cover;
-                    transition: transform 0.3s ease-in-out;
-                }
             }
 
             .part2 {
-                display: flex;
-                flex-direction: column;
-                gap: 1vh;
-                
-                h2 {
-                    font-family: ds;
-                    font-weight: 100;
-                }
-                
-                h1 {
-                    font-family: ds;
-                    font-weight: 100;
-                    
-                    span {
-                        font-family: ds;
-                        font-weight: 100;
-                        font-size: 2.8rem;
-                    }
-                }
+                align-items: center;
+                gap: 1vmax;
             }
         }
 
@@ -798,123 +750,39 @@ footer {
     }
 
     .section3 {
-        min-height: 10vmax;
-        width: 100%;
-        /* background-color: red; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* display: none; */
-
-        h1 {
-            text-align: center;
-            font-family: ds;
-            font-size: 2.5rem;
-            font-weight: 500;
-        }
-
-        .categories {
-            height: 10vmax;
-            width: 100%;
-            /* background-color: blue; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: .5vmax;
-
-            .category {
-                padding: .5vmax 1.5vmax;
-                border-radius: 2vmax;
-            }
-            
-            .category:first-child {
-                background-color: var(--dark-black);
-                color: #fff;
-            }
-        }
-
         .cards {
-            min-height: 10vmax;
-            width: 75%;
-            /* background-color: red; */
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.8vmax;
+            width: 100%;
+            justify-content: center;
             
             .card {
                 height: 27.5vmax;
-                width: 23.5vmax;
+                width: 45%;
                 background-color: var(--dark-black);
-                border-radius: 1vmax;
-                overflow: hidden;
-                flex-grow: 1;
+                flex-grow: 0;
 
                 .part1 {
-                    height: 51%;
-                    width: 100%;
-                    background-color: var(--grey-color);
-                    border-radius: 1vmax 1vmax 0 3vmax;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    img {
-                        height: 10vmax;
-                        width: 10vmax;
-                        background-size: cover;
-                        transition: transform .3s ease-in-out;
-                    }
-                }
-
-                &:hover > .part1 > img {
-                    transform: scale(1.1);
+                    height: 50%;
                 }
 
                 .part2 {
-                    height: 49%;
-                    width: 100%;
-                    padding: 1.5vmax;
-                    color: #fff;
-                    display: flex;
-                    flex-direction: column;
+                    height: 50%;
+                    padding: 1vmax;
                     gap: .5vmax;
 
                     h2 {
-                        font-family: opensans;
-                        font-size: 1.3rem;
-                        font-weight: 500;
+                        font-size: 1.2rem;
                     }
 
-                    .priceDiv {
-                        height: 40%;
-                        width: 100%;
-                        /* background-color: green; */
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-
-                        .golden_cart_btn {
-                            padding: .7vmax;
-                            font-size: 1rem;
-                        }
+                    p {
+                        font-size: .5rem;
                     }
                 }
-
-
             }
         }
 
         .view_more {
-            height: 10vmax;
-            width: 100%;
-            /* background-color: blue; */
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 2.5vmax;
-
             .view_btn {
-                padding: .75vmax 4vmax;
+                padding: 1vmax 3vmax;
             }
         }
     }
@@ -967,7 +835,7 @@ footer {
 
         .form_part {
             height: 45%;
-            width: 80%;
+            width: 85%;
             padding-top: 0vmax;
 
             form {
@@ -976,127 +844,71 @@ footer {
         }
 
         .map_part {
-            width: 80%;
+            width: 90%;
             height: 45%;
+            border-radius: .7vmax;
         }
     }
 
     .section6 {
-        height: 80vh;
+        max-height: 100vmax;
         width: 100%;
-        /* background-color: red; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.5vmax 0;
+        padding: 1vmax 0 0 0;
         /* display: none; */
 
         h1 {
-            height: 10%;
-            text-align: center;
-            font-family: ds;
-            font-size: 2.5rem;
-            font-weight: 500;
-            /* background-color: grey; */
+            width: 80%;
         }
 
         .crousal {
-            height: 60%;
-            width: 75%;
+            max-height: 80%;
+            height: fit-content;
+            width: 100%;
             /* background-color: blue; */
-            display: flex;
-            justify-content: space-between;
-
-            .cards {
-                height: 100%;
-                width: 48.5%;
-                display: flex;
-                flex-direction: column;
-                /* justify-content: space-between; */
-                gap: 2.5vmax;
-
-                .card_part {
-                    height: 55%;
-                    width: 100%;
-                    background-color: var(--dark-black);
-                    border-radius: .5vmax;
-                    color: #fff;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: .3vmax;
-                    padding: 1.5vmax;
-
-                    h3 {
-                        padding: .8vmax 0 0 0;
-                    }
-
-                    h4 {
-                        font-weight: 100;
-                    }
-                }
-
-                .profile_pic {
-                    height: 8vmax;
-                    width: 8vmax;
-                    /* background-color: rgb(159, 158, 158); */
-                    margin-left: 1.5vmax;
-                    border-radius: 50%;
-                    border: 5px solid var(--golden-color);
-                    /* overflow: hidden; */
-                    position: relative;
-
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        border-radius: 50%;
-                        object-fit: cover;
-                    }
-                }
-
-                .profile_pic::after {
-                    content: "";
-                    position: absolute;
-                    top: -15%;
-                    left: 50%;
-                    transform: translate(-50%);
-                    z-index: 9;
-                    width: 0;
-                    height: 0;
-                    border-left: 10px solid transparent;
-                    border-right: 10px solid transparent;
-                    border-bottom: 15px solid var(--golden-color);
-                }
-            }
-        }
-
-        .navigation_btns {
-            height: 10%;
-            width: 80%;
-            /* background-color: rgb(155, 155, 212); */
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1vmax;
 
-            .btns {
-                height: 3vmax;
-                width: 3vmax;
-                background-color: var(--golden-color);
-                border-radius: 50%;
+
+            .cards {
+                max-height: 100%;
+                height: fit-content;
+                width: 45%;
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.2rem;
-                color: #fff;
+                flex-direction: column;
+                /* background-color: #fff; */
+                gap: 2.5vmax;
+
+                .card_part {
+                    max-height: 75vmax;
+                    height: fit-content;
+                }
+
+                .profile_pic {
+                    height: 8vmax;
+                    width: 8vmax;
+                    margin-left: 1vmax;
+                    position: relative;
+                }
+
+                .profile_pic::after {
+                    top: -25%;
+                }
+            }
+        }
+
+        .navigation_btns {
+            .btns {
+                height: 4vmax;
+                width: 4vmax;
             }
         }
     }
 
     footer {
         max-height: 90vmax;
-        /* display: none; */
+        display: none;
 
         .info {
             height: 30vmax;
